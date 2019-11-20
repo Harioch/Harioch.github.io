@@ -1,4 +1,4 @@
-var cacheName = 'YesCache-v1';
+var cacheName = 'YesCache-v2';
 var contentToCache = [
   '../index.html',
   '../favicon.ico',
