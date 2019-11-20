@@ -1,7 +1,3 @@
-if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('../cache/sw.js');
-};
-
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
 });
