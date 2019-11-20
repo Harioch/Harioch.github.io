@@ -3,7 +3,7 @@ self.addEventListener('install', (e) => {
 });
 
 var cacheName = 'YesCache-v1';
-var appShellFiles = [
+var contentToCache = [
   '../index.html',
   '../favicon.ico',
   '../manifest.json',
