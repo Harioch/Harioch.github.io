@@ -1,7 +1,3 @@
-self.addEventListener('install', (e) => {
-    console.log('[Service Worker] Install');
-});
-
 var cacheName = 'YesCache-v1';
 var contentToCache = [
   '../index.html',
@@ -18,6 +14,7 @@ var contentToCache = [
   '../js/DecoderWorker.js',
   '../js/exif.js',
   '../js/job.js',
+  '../cache/sw.js',
   '../icons/icon-192.png',
   '../icons/icon-512.png'
 ];
@@ -30,10 +27,6 @@ self.addEventListener('install', (e) => {
       return cache.addAll(contentToCache);
     })
   );
-});
-
-self.addEventListener('fetch', (e) => {
-    console.log('[Service Worker] Fetched resource '+e.request.url);
 });
 
 self.addEventListener('fetch', (e) => {
